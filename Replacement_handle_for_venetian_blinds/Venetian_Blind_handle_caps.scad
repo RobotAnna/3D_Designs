@@ -10,8 +10,8 @@
 
 
 // PARAMETERS
-dia_rod   =   8;  // diameter of the rod that you will use as a handle
-smoothing =  60;  // cylinder smoothing: set to 60 while designing, and up to 300 for the final render.
+dia_rod   =  8;  // diameter of the rod that you will use as a handle
+smoothing = 60;  // cylinder smoothing: set to 60 while designing, and up to 300 for the final render.
 
 
 
@@ -52,7 +52,7 @@ module hook() {
     color("Bisque")
     cylinder(h=(dia_rod+3)/2 + dia_rod/4, d1=dia_rod+3, d2=dia_rod/4, center=false, $fn=smoothing);
 
-    translate([0, -dia_rod/8, base_height + (dia_rod+3)])
+    translate([0, -dia_rod/6, base_height + (dia_rod+2)])
     rotate([270,0,0])
 
     difference() {
