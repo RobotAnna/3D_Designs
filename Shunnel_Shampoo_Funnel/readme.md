@@ -32,7 +32,7 @@ External perimeters: 1mm
 ### Other
 * Nozzle width and layer height really don't matter. I used 0.4mm nozzle and made the layer height as large as possible, 0.28mm.
 * Tested on Prusa MK4S, in PLA.
-* Model is available on [Github](https://github.com/RobotAnna/3D_Designs/tree/main/Shunnel_Shampoo_Funnel), [Printables](https://www.printables.com/model/1386103-the-shunnel-shampoo-funnel-vase-mode), [Thingiverse](https://www.thingiverse.com/thing:7119425) and [Makerworld](https://makerworld.com/en/models/1705077-the-shunnel-shampoo-funnel-vase-mode).
+* Model is available on [Github](https://github.com/RobotAnna/3D_Designs/tree/main/Shunnel_Shampoo_Funnel), [Printables](https://www.printables.com/model/1386103-shunnel-shampoo-funnel-vase-mode-parametric), [Thingiverse](https://www.thingiverse.com/thing:7119425) and [Makerworld](https://makerworld.com/en/models/1705077-the-shunnel-shampoo-funnel-vase-mode).
 * Feel free to ask questions.
 
 ![alt text](./pics/IMG_8217.JPEG)
