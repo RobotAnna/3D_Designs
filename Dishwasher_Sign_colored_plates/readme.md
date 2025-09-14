@@ -1,4 +1,4 @@
-Colored plates for Bergeron720's dishwasher sign. Supports single nozzle; no MMU required. Parametric.
+Colored plates for [Bergeron720's dishwasher sign](https://makerworld.com/en/models/965214-clean-dirty-dishwasher-sign?from=search#profileId-935601). Supports single nozzle; no MMU required. Parametric.
 You need to download and print the base unit from Makerworld, then use this design for the insert plates.
 
 ![alt text](./pics/plate_clean.png)
