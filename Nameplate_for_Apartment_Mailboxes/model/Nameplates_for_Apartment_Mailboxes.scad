@@ -5,7 +5,9 @@
 //
 // Author: RobotAnna
 // https://www.printables.com/@RobotAnna
-// CC Public Domain
+//
+// CC Attribution-NonCommercial-ShareAlike 4.0 International
+// http://creativecommons.org/licenses/by-nc-sa/4.0/
 
 
 // PREPARATION
