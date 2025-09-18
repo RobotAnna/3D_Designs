@@ -19,7 +19,7 @@
 
 // PARAMETERS
 p_u         =  1;   // Height Units (U), 1 or 3. 1U = 39.65 mm tall, 3U = 128.5 mm tall.
-p_hp        = 16;   // Width Horizontal Pitch (HP), 2 - 32
+p_hp        =  12;   // Width Horizontal Pitch (HP), 2 - 32
 p_ribs      =  0;   // Do you want ribs? 1=yes, 0=no
 p_label     =  1;   // Do you want a label? 1=yes, 0=no
 
@@ -39,6 +39,7 @@ c_hole_to_top  = 3;    // distance from center of hole to top edge = 3 mm
 d_width = p_hp * 5.08; // Width is measured in HP, 1 HP = 5.08 mm
 d_depth = (p_u == 1) ? 39.65 : 128.5;
 
+// if p_hp is 5 or less: only place 1 hole top and bottom. if 6 or more: 2 holes.
 
 
 // MODULES
@@ -58,7 +59,7 @@ module baseplate() {
     color("LightSeaGreen")
     translate([c_bevel_radius, c_bevel_radius, 0])
     minkowski() {
-        cube([d_width, d_depth, c_height/2], center=false);
+        cube([d_width - 2*c_bevel_radius, d_depth - 2*c_bevel_radius, c_height/2], center=false);
         cylinder(c_height/2, d=2*c_bevel_radius, center=false, $fn=p_smoothing);
     }
 }
@@ -66,17 +67,48 @@ module baseplate() {
 module platehole() {
     color("Wheat")
     hull() {
-        color("LemonChiffon")
-        translate([1.6, c_hole_dia/2, 0])
-        cylinder(h=c_height*2, d=c_hole_dia, center=false, $fn=p_smoothing);
-        color("LightSalmon")
-        translate([4.9, c_hole_dia/2, 0])
-        cylinder(h=c_height*2, d=c_hole_dia, center=false, $fn=p_smoothing);
+        translate([0, 0, 0])
+        cylinder(h=c_height, d=c_hole_dia, center=false, $fn=p_smoothing);
+        translate([c_hole_dia, 0, 0])
+        cylinder(h=c_height, d=c_hole_dia, center=false, $fn=p_smoothing);
     }
 }
 
 
-// PUT IT ALL TOGETHER
-baseplate();
+module holed_baseplate() {
+difference() {
+    baseplate();
 
-translate([3,0,0]) platehole();
+    if (p_hp < 6) { // HP is 5 or less: only one hole top and bottom
+
+        color("MistyRose")
+        translate([d_width/2 - c_hole_dia/2, c_hole_to_top, 0])
+        platehole();
+
+        color("Thistle")
+        translate([d_width/2 - c_hole_dia/2, d_depth-c_hole_to_top, 0])
+        platehole();
+
+    } else { // HP is 6 or more: two holes top and bottom
+
+        color("LightCoral")
+        translate([c_hole_to_side - c_hole_dia/2, c_hole_to_top, 0])
+        platehole();
+
+        color("MistyRose")
+        translate([c_hole_to_side - c_hole_dia/2, d_depth - c_hole_to_top, 0])
+        platehole();
+
+        color("Thistle")
+        translate([d_width - c_hole_to_side - c_hole_dia/2, c_hole_to_top, 0])
+        platehole();
+
+        color("White")
+        translate([d_width - c_hole_to_side - c_hole_dia/2, d_depth - c_hole_to_top, 0])
+        platehole();
+    }
+    }
+}
+
+// PUT IT ALL TOGETHER
+holed_baseplate();
