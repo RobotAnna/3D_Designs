@@ -1,0 +1,18 @@
+// PARAMETERS
+smoothing = 60;
+
+// dimensions of the base plate
+height       = 19;
+width        = 100;
+thickness    = 1.6;
+
+// specs of the holes
+enable_holes = 1;   // enable holes
+hole_to_hole = 88;  // distance between the holes, in mm
+hole_dia     = 3.5; // diameter of the hole, in mm
+
+// textm
+names          = ["Sophie & Sven", "Larissa B.", "N. Browning"];  // a list of names
+fontname       = "DIN 1451 Std:style=Mittelschrift"; // Help --> Font List --> select font --> copy to clipboard 
+textsize       = 8;
+text_thickness = 0.8; // text is set 0.8mm into the sign

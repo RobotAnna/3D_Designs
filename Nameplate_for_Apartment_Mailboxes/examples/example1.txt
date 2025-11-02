@@ -1,0 +1,19 @@
+// PARAMETERS
+smoothing = 60;
+
+// dimensions of the base plate
+height       = 25;
+width        = 120;
+thickness    = 2.4;
+
+// specs of the holes
+enable_holes = 0;   // disable holes
+hole_to_hole = 88;  // ignore this if you do not enable holes
+hole_dia     = 3.5; // ignore this if you do not enable holes
+
+// text
+names          = ["Mickey Mouse", "Donald Duck"];  // a list of names
+fontname       = "DejaVu Sans:style=Book"; // Help --> Font List --> select font --> copy to clipboard 
+textsize       = 12;
+text_thickness = 100; // set to 100 if you want the text to be cut through to the back
+

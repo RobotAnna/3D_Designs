@@ -1,0 +1,19 @@
+// PARAMETERS
+smoothing = 60;
+
+// dimensions of the base plate
+height       = 40;
+width        = 240;
+thickness    = 2;
+
+// specs of the holes
+enable_holes = 1;    // enable the holes
+hole_to_hole = 210;  // distance between the holes, in mm
+hole_dia     = 5;    // diameter of the hole, in mm
+
+// text
+names          = ["DO NOT DISTURB", "Anna's Workshop"];  // a list of names
+fontname       = "Noto Sans:style=Bold"; // Help --> Font List --> select font --> copy to clipboard 
+textsize       = 16;
+text_thickness = 1; // text is set 1mm into the sign
+
