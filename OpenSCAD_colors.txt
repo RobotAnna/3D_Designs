@@ -1,0 +1,11 @@
+
+// Purple -- Thistle, MediumPurple
+// Pinks  -- MistyRose, Violet, LightPink
+// Blues  -- PowderBlue, DeepSkyBlue
+// Browns -- Cornsilk, Wheat, Tan
+// Greens -- PaleGreen, LightSeaGreen
+// Reds   -- LightCoral, IndianRed
+// Orange -- LightSalmon, Orange
+// Yellow -- LemonChiffon, Khaki
+// Whites -- White, Ivory
+// Grays  -- Gainsboro, Silver

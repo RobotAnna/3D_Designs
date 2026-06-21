@@ -1,0 +1,57 @@
+Original specs
+
+height: 19mm
+width: 100mm
+thickness: 1.6mm
+
+hole to hole: 88mm
+dia: 4mm --> why did I choose 3.5mm?
+
+Font: DIN letter type din1451
+capitaal 5mm gaten
+
+Font size on board:
+Letter line thickness ~0.5mm.
+Capital M: height 5mm, width 4mm.
+Small m: height 4mm, width 4.
+
+Names:
+(redacted)
+
+Instructions:
+1. DOWNLOAD FONT
+Download and install font DIN1451.
+
+{snip}
+
+d). EXPORT
+Export as a STL file.
+6. PRUSA SLICER
+a) IMPORT
+Import the STL into PrusaSlicer
+b) SETTINGS
+Use these settings.
+
+Print settings: 0.20mm STRUCTURAL
+Filament: Prusament PETG
+Printer: MK4S, HF0.4 nozzle
+Infill: 100%
+
+Layers and perimeters
+  Layer height: 0.2mm
+  First layer: 0.2mm
+  Solid layers: 3 top and bottom
+  Minimum shell thickness: 0.6mm top and bottom
+
+Infill
+  Fill density: 100%
+  Fill pattern: Rectilinear
+  Top fill pattern: Monotonic lines
+
+c) SLICE
+Slice, and add a color change at 0.8mm
+Export the BG code
+
+7. PRINT
+Be careful during the color change: a scrap of PETG may form a loop and deposit itself onto the nozzle just before printing the top layers. Have pliers in hand and be ready to catch the scrap!
+
