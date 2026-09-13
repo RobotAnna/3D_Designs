@@ -7,8 +7,8 @@
 // Author: RobotAnna
 // https://www.printables.com/@RobotAnna
 //
-// CC Attribution-NonCommercial-ShareAlike 4.0 International
-// http://creativecommons.org/licenses/by-nc-sa/4.0/
+// CC Public Domain
+// http://creativecommons.org/publicdomain/zero/1.0/
 
 // 20251102 v2 add 2x parameters: custom depth of the text, and disable holes.
 

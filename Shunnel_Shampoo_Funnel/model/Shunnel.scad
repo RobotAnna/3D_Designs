@@ -6,8 +6,8 @@
 // Author: RobotAnna
 // https://www.printables.com/@RobotAnna
 // 
-// CC Attribution-NonCommercial-ShareAlike 4.0 International
-// http://creativecommons.org/licenses/by-nc-sa/4.0/
+// CC Public Domain
+// http://creativecommons.org/publicdomain/zero/1.0/
 
 
 
